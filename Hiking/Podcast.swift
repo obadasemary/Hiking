@@ -13,10 +13,38 @@ struct Podcast: View {
     
     let episode = Episode(name: "Macbreak Weekly", track: "WWDC 2019")
     
+    @State private var isPlaying = false
+    
     // MARK: - BODY
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+            Text(self.episode.name)
+                .font(.title)
+                .foregroundColor(self.isPlaying ? .green : .black)
+            
+            Text(self.episode.track)
+                .foregroundColor(.secondary)
+            
+            PlayButton(isPlaying: $isPlaying)
+            
+        }
+    }
+}
+
+struct PlayButton: View {
+    
+    @Binding var isPlaying: Bool
+    
+    var body: some View {
+        
+        Button(action: {
+            self.isPlaying.toggle()
+        }) {
+            Text("Play")
+        }
+        .padding(12)
     }
 }
 
