@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct FancyTimerView: View {
+    
+    // MARK: - PROPERTIES
+    
+    @ObservedObject var fancyTimer = FancyTimer()
+    
+    // MARK: - BODY
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(fancyTimer.value)")
+            .font(.largeTitle)
     }
 }
 
