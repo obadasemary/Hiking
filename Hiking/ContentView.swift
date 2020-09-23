@@ -16,9 +16,18 @@ struct ContentView: View {
     // MARK: - BODY
     
     var body: some View {
-        List(self.hikes, id: \.name) { hike in
-            HikeCell(hike: hike)
+        
+        NavigationView {
+            
+            List(self.hikes, id: \.name) { hike in
+                NavigationLink(destination: HikeDetailView(hike: hike)) {
+                    
+                    HikeCell(hike: hike)
+                }
+            }
+            .navigationBarTitle("Hikings")
         }
+
     }
 }
 
