@@ -13,6 +13,7 @@
 		AF797EC8251ACB29005C9EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF797EC7251ACB29005C9EDB /* Preview Assets.xcassets */; };
 		AF797ED2251AE46C005C9EDB /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797ED1251AE46C005C9EDB /* Hike.swift */; };
 		AF797EDA251AE6D4005C9EDB /* HikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797ED9251AE6D4005C9EDB /* HikeCell.swift */; };
+		AF797EDD251AE8FF005C9EDB /* HikeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797EDC251AE8FF005C9EDB /* HikeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AF797EC9251ACB29005C9EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF797ED1251AE46C005C9EDB /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		AF797ED9251AE6D4005C9EDB /* HikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeCell.swift; sourceTree = "<group>"; };
+		AF797EDC251AE8FF005C9EDB /* HikeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				AF797ED0251AE45A005C9EDB /* Models */,
 				AF797EC0251ACB24005C9EDB /* HikingApp.swift */,
 				AF797EC2251ACB24005C9EDB /* ContentView.swift */,
+				AF797EDC251AE8FF005C9EDB /* HikeDetailView.swift */,
 				AF797ED9251AE6D4005C9EDB /* HikeCell.swift */,
 				AF797EC4251ACB29005C9EDB /* Assets.xcassets */,
 				AF797EC9251ACB29005C9EDB /* Info.plist */,
@@ -154,6 +157,7 @@
 			files = (
 				AF797ED2251AE46C005C9EDB /* Hike.swift in Sources */,
 				AF797EC3251ACB24005C9EDB /* ContentView.swift in Sources */,
+				AF797EDD251AE8FF005C9EDB /* HikeDetailView.swift in Sources */,
 				AF797EDA251AE6D4005C9EDB /* HikeCell.swift in Sources */,
 				AF797EC1251ACB24005C9EDB /* HikingApp.swift in Sources */,
 			);
