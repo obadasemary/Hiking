@@ -33,6 +33,12 @@ struct MainView: View {
                     Image(systemName: "line.horizontal.3.decrease.circle")
                     Text("Filter")
                 }
+            
+            BindingView()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Binding")
+                }
         }
     }
 }
