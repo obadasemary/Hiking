@@ -14,7 +14,7 @@ struct BindingView: View {
     @State var name: String = ""
     
     private func printName() {
-        
+        print(name)
     }
     
     // MARK: - BODY
