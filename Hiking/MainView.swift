@@ -21,6 +21,12 @@ struct MainView: View {
                     Image(systemName: "photo")
                     Text("Animals")
                 }
+            
+            DishsView()
+                .tabItem {
+                    Image(systemName: "location")
+                    Text("Dishs")
+                }
         }
     }
 }
