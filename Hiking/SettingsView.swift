@@ -11,7 +11,7 @@ struct SettingsView: View {
     
     // MARK: - PROPERTIES
     
-    @ObservedObject var userSettingsViewModel = UserSettingsViewModel()
+    @EnvironmentObject var userSettingsViewModel: UserSettingsViewModel
     
     // MARK: - BODY
     
@@ -29,7 +29,7 @@ struct SettingsView: View {
             .font(.largeTitle)
             .foregroundColor(.pink)
             
-            FancyScoreView(score: self.$userSettingsViewModel.score)
+            FancyScoreView()
         }
     }
 }
