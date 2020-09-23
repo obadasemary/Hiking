@@ -23,6 +23,8 @@
 		AF797EFD251AF667005C9EDB /* DishsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797EFC251AF667005C9EDB /* DishsView.swift */; };
 		AF797F06251B610D005C9EDB /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797F05251B610D005C9EDB /* FilterView.swift */; };
 		AF797F0D251B8AEE005C9EDB /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797F0C251B8AEE005C9EDB /* BindingView.swift */; };
+		AF797F13251BC8E8005C9EDB /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797F12251BC8E8005C9EDB /* Episode.swift */; };
+		AF797F16251BD1E9005C9EDB /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797F15251BD1E9005C9EDB /* Podcast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		AF797EFC251AF667005C9EDB /* DishsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishsView.swift; sourceTree = "<group>"; };
 		AF797F05251B610D005C9EDB /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		AF797F0C251B8AEE005C9EDB /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		AF797F12251BC8E8005C9EDB /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		AF797F15251BD1E9005C9EDB /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				AF797ED9251AE6D4005C9EDB /* HikeCell.swift */,
 				AF797F05251B610D005C9EDB /* FilterView.swift */,
 				AF797F0C251B8AEE005C9EDB /* BindingView.swift */,
+				AF797F15251BD1E9005C9EDB /* Podcast.swift */,
 				AF797EC4251ACB29005C9EDB /* Assets.xcassets */,
 				AF797EC9251ACB29005C9EDB /* Info.plist */,
 				AF797EC6251ACB29005C9EDB /* Preview Content */,
@@ -109,6 +114,7 @@
 			children = (
 				AF797EF9251AF617005C9EDB /* Dish.swift */,
 				AF797ED1251AE46C005C9EDB /* Hike.swift */,
+				AF797F12251BC8E8005C9EDB /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 				AF797EF0251AF361005C9EDB /* URLImage.swift in Sources */,
 				AF797EFA251AF617005C9EDB /* Dish.swift in Sources */,
 				AF797EF4251AF38F005C9EDB /* ImageLoader.swift in Sources */,
+				AF797F16251BD1E9005C9EDB /* Podcast.swift in Sources */,
 				AF797EE2251AECE2005C9EDB /* MainView.swift in Sources */,
 				AF797EC3251ACB24005C9EDB /* ContentView.swift in Sources */,
 				AF797EEB251AEF4E005C9EDB /* Array+Extensions.swift in Sources */,
@@ -219,6 +226,7 @@
 				AF797EFD251AF667005C9EDB /* DishsView.swift in Sources */,
 				AF797EDA251AE6D4005C9EDB /* HikeCell.swift in Sources */,
 				AF797EE5251AED47005C9EDB /* AnimalsView.swift in Sources */,
+				AF797F13251BC8E8005C9EDB /* Episode.swift in Sources */,
 				AF797EC1251ACB24005C9EDB /* HikingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
