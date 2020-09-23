@@ -24,5 +24,6 @@ struct FancyTimerView: View {
 struct FancyTimerView_Previews: PreviewProvider {
     static var previews: some View {
         FancyTimerView()
+            .preferredColorScheme(.dark)
     }
 }
