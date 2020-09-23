@@ -13,16 +13,20 @@ struct BindingView: View {
     
     @State var name: String = ""
     
+    private func printName() {
+        
+    }
+    
     // MARK: - BODY
     
     var body: some View {
         VStack {
-            Text(name)
+            Text("User Name \(name)")
             TextField("Enter name", text: $name)
             
-//            Button(action: printName) {
-//                Text("Show Name Value")
-//            }
+            Button(action: printName) {
+                Text("Show Name Value")
+            }
             Spacer()
         }
         .padding()
