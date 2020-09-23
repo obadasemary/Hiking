@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: - PROPERTIES
+    
+    let hikes = Hike.all()
+    
+    // MARK: - BODY
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(self.hikes, id: \.name) { hike in
+            HikeCell(hike: hike)
+        }
     }
 }
 
