@@ -11,18 +11,18 @@ struct FancyScoreView: View {
     
     // MARK: - PROPERTIES
     
-    @Binding var score: Int
+    @EnvironmentObject var userSettings: UserSettingsViewModel
     
     // MARK: - BODY
     
     var body: some View {
         VStack {
             
-            Text("\(self.score)")
+            Text("\(self.userSettings.score)")
             
             Button(action: {
                 
-                self.score += 1
+                self.userSettings.score += 1
                 
             }, label: {
                 Text("Increment Score")
@@ -37,6 +37,7 @@ struct FancyScoreView: View {
 
 struct FancyScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        FancyScoreView(score: .constant(0))
+        FancyScoreView()
+            .preferredColorScheme(.dark)
     }
 }
