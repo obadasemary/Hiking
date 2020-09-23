@@ -12,6 +12,7 @@ struct HikeDetailView: View {
     // MARK: - PROPERTIES
     
     let hike: Hike
+    @State private var zoomed: Bool = false
     
     // MARK: - BODY
     
@@ -21,9 +22,15 @@ struct HikeDetailView: View {
             Image(hike.imageUrl)
                 .resizable()
 //                .frame(width: 400, height: 400, alignment: .center)
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: self.zoomed ? .fill : .fit)
                 .cornerRadius(20)
                 .padding()
+                .onTapGesture(count: 1, perform: {
+                    withAnimation {
+                        
+                        self.zoomed.toggle()
+                    }
+                })
             
             HStack {
                 
@@ -38,6 +45,7 @@ struct HikeDetailView: View {
             
             Spacer()
         }
+        .navigationBarTitle(hike.name, displayMode: .inline)
     }
 }
 
