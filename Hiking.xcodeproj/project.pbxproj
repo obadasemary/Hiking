@@ -21,6 +21,7 @@
 		AF797EF4251AF38F005C9EDB /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797EF3251AF38F005C9EDB /* ImageLoader.swift */; };
 		AF797EFA251AF617005C9EDB /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797EF9251AF617005C9EDB /* Dish.swift */; };
 		AF797EFD251AF667005C9EDB /* DishsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797EFC251AF667005C9EDB /* DishsView.swift */; };
+		AF797F06251B610D005C9EDB /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF797F05251B610D005C9EDB /* FilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AF797EF3251AF38F005C9EDB /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		AF797EF9251AF617005C9EDB /* Dish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		AF797EFC251AF667005C9EDB /* DishsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishsView.swift; sourceTree = "<group>"; };
+		AF797F05251B610D005C9EDB /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				AF797EFC251AF667005C9EDB /* DishsView.swift */,
 				AF797EDC251AE8FF005C9EDB /* HikeDetailView.swift */,
 				AF797ED9251AE6D4005C9EDB /* HikeCell.swift */,
+				AF797F05251B610D005C9EDB /* FilterView.swift */,
 				AF797EC4251ACB29005C9EDB /* Assets.xcassets */,
 				AF797EC9251ACB29005C9EDB /* Info.plist */,
 				AF797EC6251ACB29005C9EDB /* Preview Content */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF797F06251B610D005C9EDB /* FilterView.swift in Sources */,
 				AF797ED2251AE46C005C9EDB /* Hike.swift in Sources */,
 				AF797EF0251AF361005C9EDB /* URLImage.swift in Sources */,
 				AF797EFA251AF617005C9EDB /* Dish.swift in Sources */,
