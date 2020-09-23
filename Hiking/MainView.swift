@@ -49,7 +49,7 @@ struct MainView: View {
             FancyTimerView()
                 .tabItem {
                     Image(systemName: "timer")
-                    Text("Podcast")
+                    Text("FancyTimer")
                 }
         }
     }
