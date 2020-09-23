@@ -51,6 +51,12 @@ struct MainView: View {
                     Image(systemName: "timer")
                     Text("FancyTimer")
                 }
+            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
     }
 }
