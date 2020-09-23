@@ -39,6 +39,12 @@ struct MainView: View {
                     Image(systemName: "map")
                     Text("Binding")
                 }
+            
+            Podcast()
+                .tabItem {
+                    Image(systemName: "homepod")
+                    Text("Podcast")
+                }
         }
     }
 }
