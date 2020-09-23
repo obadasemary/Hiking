@@ -40,9 +40,15 @@ struct MainView: View {
                     Text("Binding")
                 }
             
-            Podcast()
+            PodcastView()
                 .tabItem {
                     Image(systemName: "homepod")
+                    Text("Podcast")
+                }
+            
+            FancyTimerView()
+                .tabItem {
+                    Image(systemName: "timer")
                     Text("Podcast")
                 }
         }
