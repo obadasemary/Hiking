@@ -37,7 +37,7 @@ struct FancyScoreView: View {
 
 struct FancyScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        FancyScoreView()
+        FancyScoreView().environmentObject(UserSettingsViewModel())
             .preferredColorScheme(.dark)
     }
 }
