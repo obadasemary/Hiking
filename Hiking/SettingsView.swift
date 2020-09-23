@@ -28,6 +28,8 @@ struct SettingsView: View {
             })
             .font(.largeTitle)
             .foregroundColor(.pink)
+            
+            FancyScoreView(score: self.$userSettingsViewModel.score)
         }
     }
 }
