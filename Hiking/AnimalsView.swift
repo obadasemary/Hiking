@@ -36,8 +36,21 @@ struct AnimalsView: View {
             
                 List(animals.chunks(size: Int(self.sliderValue)), id: \.self) { chunk in
                     ForEach(chunk, id: \.self) { animal in
-                        Text(animal)
-                            .font(.system(size: CGFloat(300 / self.sliderValue)))
+
+//                        Text(animal)
+//                            .font(.system(size: CGFloat(300 / self.sliderValue)))
+                        
+                        HStack {
+                            Spacer()
+         
+                            URLImage(url: self.imageURL)
+                                .frame(width: 300/self.sliderValue, height: 400/self.sliderValue)
+                                .cornerRadius(10.0)
+                                .shadow(color: Color.white, radius: 6.0, x: -8, y: -8)
+                                .shadow(color: Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)), radius: 6.0, x: 8, y: 8)
+                            
+                            Spacer()
+                        }
                     }
                 }
             }
