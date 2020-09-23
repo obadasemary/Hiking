@@ -52,7 +52,8 @@ struct MainView: View {
                     Text("FancyTimer")
                 }
             
-            SettingsView()
+            let userSettingsViewModel = UserSettingsViewModel()
+            SettingsView().environmentObject(userSettingsViewModel)
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Settings")
