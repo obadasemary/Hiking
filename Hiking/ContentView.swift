@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: - PROPERTIES
+    
+    let hikes = Hike.all()
+    
+    // MARK: - BODY
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView {
+            
+            List(self.hikes, id: \.name) { hike in
+                NavigationLink(destination: HikeDetailView(hike: hike)) {
+                    
+                    HikeCell(hike: hike)
+                }
+            }
+            .navigationBarTitle("Hikings")
+        }
+
     }
 }
 
