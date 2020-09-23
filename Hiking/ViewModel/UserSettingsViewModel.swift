@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
+
+class UserSettingsViewModel: ObservableObject {
+    
+    @Published var score: Int = 0
+    
+    
+}
