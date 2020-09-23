@@ -27,6 +27,12 @@ struct MainView: View {
                     Image(systemName: "location")
                     Text("Dishs")
                 }
+            
+            FilterView()
+                .tabItem {
+                    Image(systemName: "line.horizontal.3.decrease.circle")
+                    Text("Filter")
+                }
         }
     }
 }
