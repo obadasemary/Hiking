@@ -28,7 +28,7 @@ struct FilterView: View {
                         .frame(width: 50, height: 50, alignment: .center)
                 }
                 
-                ForEach(dishs) { dish in
+                ForEach(dishs.filter { $0.isSpicy == self.isSpicy }) { dish in
                     HStack {
                         
                         Image(dish.imageURL)
