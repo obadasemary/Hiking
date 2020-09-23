@@ -1,5 +1,5 @@
 //
-//  Podcast.swift
+//  PodcastView.swift
 //  Hiking
 //
 //  Created by Abdelrahman Mohamed on 23.09.2020.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Podcast: View {
+struct PodcastView: View {
     
     // MARK: - PROPERTIES
     
@@ -50,6 +50,6 @@ struct PlayButton: View {
 
 struct Podcast_Previews: PreviewProvider {
     static var previews: some View {
-        Podcast()
+        PodcastView()
     }
 }
