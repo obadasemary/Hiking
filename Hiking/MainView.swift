@@ -33,6 +33,31 @@ struct MainView: View {
                     Image(systemName: "line.horizontal.3.decrease.circle")
                     Text("Filter")
                 }
+            
+            BindingView()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Binding")
+                }
+            
+            PodcastView()
+                .tabItem {
+                    Image(systemName: "homepod")
+                    Text("Podcast")
+                }
+            
+            FancyTimerView()
+                .tabItem {
+                    Image(systemName: "timer")
+                    Text("FancyTimer")
+                }
+            
+            let userSettingsViewModel = UserSettingsViewModel()
+            SettingsView().environmentObject(userSettingsViewModel)
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
     }
 }
